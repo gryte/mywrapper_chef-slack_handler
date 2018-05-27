@@ -1,20 +1,13 @@
 name 'mywrapper_chef-slack_handler'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Adam Linkous'
+maintainer_email 'alinkous+support@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures mywrapper_chef-slack_handler'
 long_description 'Installs/Configures mywrapper_chef-slack_handler'
 version '0.1.0'
-chef_version '>= 12.14' if respond_to?(:chef_version)
+supports 'centos'
+chef_version '>= 12.19' if respond_to?(:chef_version)
+issues_url 'https://github.com/gryte/mywrapper_chef-slack_handler/issues'
+source_url 'https://github.com/gryte/mywrapper_chef-slack_handler'
 
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/mywrapper_chef-slack_handler/issues'
-
-# The `source_url` points to the development repository for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/mywrapper_chef-slack_handler'
+depends 'slack_handler', '~> 0.9.1'
