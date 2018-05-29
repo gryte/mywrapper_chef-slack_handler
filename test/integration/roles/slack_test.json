@@ -1,0 +1,22 @@
+{
+  "name": "slack_test",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "description": "The test role for systems that use the slack handler",
+  "run_list": [
+    "recipe[mywrapper_chef-slack_handler::default]"
+  ],
+  "override_attributes": {
+    "mywrapper_chef-slack_handler": {
+      "webhooks": {
+        "list": [
+          "test_notify",
+          "test_notify_2"
+        ]
+      }
+    }
+  }
+}

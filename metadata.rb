@@ -11,3 +11,4 @@ issues_url 'https://github.com/gryte/mywrapper_chef-slack_handler/issues'
 source_url 'https://github.com/gryte/mywrapper_chef-slack_handler'
 
 depends 'slack_handler', '~> 0.9.1'
+depends 'chef-vault', '~> 3.1.0'
